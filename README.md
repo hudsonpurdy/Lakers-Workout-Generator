@@ -7,5 +7,5 @@ Our goal: To create an app for new and experienced gymgoers to keep exercises fr
 
 Stack:
     Backend - Python, Flask
-    Frontend - JavaScript, CSS, HTML\
+    Frontend - JavaScript, CSS, HTML
     Database - Stearns SQLdb
