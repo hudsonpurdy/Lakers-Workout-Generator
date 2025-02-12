@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Lakers Exercise Generator</title>
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='datastyle.css') }}"
+      />
+      <script>
+        function toggleHover(textNum){
+          var textDefault=document.getElementById('defaultText')
+          var textElement=document.getElementById(textNum);
+          var textElementClass=textElement.className;
+          if (textElementClass=='text-visible'){
+            textElement.className='text-hidden';
+            textDefault.className='text-visible';
+          } else {
+            textElement.className='text-visible';
+            textDefault.className='text-hidden';
+          }
+        }
+        </script>
+  </head>
+  <body>
+    <header>
+      <img src="https://loodibee.com/wp-content/uploads/los-angeles-lakers-logo-symbol.png" alt="LA Lakers Logo">
+      <nav>
+        <ul>
+          <li><a href="/">Home</a></li>
+          <li><a href="/search">Search</a></li>
+          <li><a href="/diagram">Muscle Diagram</a></li>
+        </ul>
+      </nav>
+    </header>
+    <h1>Lakers Exercise Generator</h1>
+  </body>
+  <p>
+    Use the navigation bar below to see more information about the website. Please hover over each button to read the super duper cool unique information.
+  </p>
+  <div class="h2">
+    <ul>
+      <li id="toggleButton1" onmouseover="toggleHover('text1')" onmouseout="toggleHover('text1')">Instructions</li>
+      <li id="toggleButton2" onmouseover="toggleHover('text2')" onmouseout="toggleHover('text2')">Additional Information</li>
+    </ul>
+  </div>
+  <p id="defaultText" class="text-visible">
+    Whether you're a brand new lifter or have your pro card with ten years of experience in the gym, this website is for you.
+    If you have never set foot in a gym before, it can be very intimidating.
+    There's lots of crazy equipment, really strong people who could be judging you, and of course the possibility of getting injured.
+    That's where we come in, with our wide selection of excerises you never have to worry about doing the wrong thing or hurting yourself.
+    For the experienced lifters, this website is perfect for adding variation and pizzazz to your gym days, our wide selection of exercises for all equipment types will always keep the gym feeling fresh and new.
+  </p>
+  <p id="text1" class="text-hidden">
+    Click on Search in the navigation bar at the top to begin searching.
+    <br>
+    Select desired muscle group and equipment to search. Will only search by desired parameters and anything left blank will not be used in the search.
+    <br>
+    Click submit to get your specialized list of exercises.
+  </p>
+  <p id="text2" class="text-hidden">
+    Click on Muscle Diagram in the navigation bar at the top to view a diagram of muscle locations
+    <br>
+    Click on exercises after searching to view more information about them
+  </p>
+</html>
+

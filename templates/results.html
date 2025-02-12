@@ -1,0 +1,45 @@
+<html> <!-- all pages start and end with this tag -->
+<!-- Header information: links to external scripts and style files, other metadata about the page. -->
+<head>
+<!-- The title is mandatory. If you use tabs, the title appears in the page's tab in your browser.-->
+<title>The Lakers Project</title>
+<link rel="stylesheet" href="../static/datastyle.css">
+</head>
+<!-- The body consists of the visible parts of the web page. -->
+<body>
+    <header>
+      <img src="https://loodibee.com/wp-content/uploads/los-angeles-lakers-logo-symbol.png" alt="LA Lakers Logo">
+        <nav>
+          <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/search">Search</a></li>
+            <li><a href="/diagram">Muscle Diagram</a></li>
+          </ul>
+        </nav>
+    </header>
+        
+
+<h1>Exercise Helper</h1>
+
+
+<p>
+    Muscle: {{muscle}}   |    Equipment: {{equipment}}
+</p>
+
+<div class="resultsList">
+  <a class="back-link" href="/search">Back</a>
+<ul>
+    {% for result in results.keys(): %}
+    <li><a href={{results[result]}} target="_blank">{{result}}</a></li>
+    {% endfor %}
+</ul>
+
+</div>
+
+
+
+
+
+<!-- always end your page with these tags! -->
+</body>
+</html>

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="../static/datastyle.css">
+    <title>Lakers Exercise App</title>
+</head>
+
+<body>
+    <header>
+        <img src="https://loodibee.com/wp-content/uploads/los-angeles-lakers-logo-symbol.png" alt="LA Lakers Logo">
+        <nav>
+          <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/diagram">Muscle Diagram</a></li>
+          </ul>
+        </nav>
+    </header>
+
+
+    <div class="search">
+        <h2>
+            <form action="/results" method="POST">
+                <label for="musclegroup">Choose a Muscle Group:</label> 
+                <br>
+                <select name="musclegroup" id="musclegroup">
+                <option value="">--</option>
+                <option value="Abdominals">Abdominals</option>
+                <option value="Biceps">Biceps</option>
+                <option value="Lats">Lats</option>
+                <option value="Middle Back">Middle Back</option>
+                <option value="Lower Back">Lower Back</option>
+                <option value="Shoulders">Shoulders</option>
+                <option value="Glutes">Glutes</option>
+                <option value="Triceps">Triceps</option>
+                <option value="Shoulders">Shoulders</option>
+                <option value="Hamstrings">Hamstrings</option>
+                <option value="Neck">Neck</option>
+                <option value="Traps">Traps</option>
+                <option value="Calves">Calves</option>
+                <option value="Chest">Chest</option>
+                <option value="Adductors">Adductors</option>
+                <option value="Quadriceps">Quadriceps</option>
+                <option value="Forearms">Forearms</option>
+                </select>
+                <br>
+                <label for="musclegroup">Choose your Equipment:</label>
+                 <br>
+                <select name="equipmenttype" id="equipmenttype">
+                <option value="">--</option>
+                <option value="Body Only">Body Only</option>
+                <option value="Machine">Machine</option>
+                <option value="Other">Other</option>
+                <option value="Barbell">Barbell</option>
+                <option value="Dumbbell">Dumbbell</option>
+                <option value="Kettlebells">Kettlebells</option>
+                <option value="Cable">Cable</option>
+                <option value="E-Z Curl Bar">E-Z Curl Bar</option>
+                <option value="Bands">Bands</option>
+                <option value="Medicine Ball">Medicine Ball</option>
+                <option value="Cables">Cables</option>
+                <option value="Weigh Bench">Weight Bench</option>
+                </select>
+                <br>
+                <input type="submit" value="Submit">
+            </form>
+        </h2>
+    </div>
+</body>
+</html>
